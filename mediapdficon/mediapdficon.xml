@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+    <name>plg_system_mediapdficon</name>
+    <author>David Toro Triana</author>
+    <authorEmail>dtorot@opensai.org</authorEmail>
+    <authorUrl>https://opensai.org</authorUrl>
+    <creationDate>August 2026</creationDate>
+    <copyright>Copyright (C) 2026 Open Source Academic Initiative (OpenSAI). All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0.0</version>
+    <description>Shows a PDF-specific icon for PDF files in the Media Manager grid view, instead of the generic document icon Joomla core uses for every non-image/video/audio file type.</description>
+    <files>
+        <filename plugin="mediapdficon">mediapdficon.php</filename>
+    </files>
+</extension>
