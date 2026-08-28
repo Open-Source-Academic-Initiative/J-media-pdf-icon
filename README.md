@@ -8,14 +8,12 @@ Joomla core shows for every non-image/video/audio file type. Built for
 
 ## Status
 
-Verified so far: PHP syntax valid, the injected JS passes a real syntax
-check (`node --check`) and its file-matching regex passes a table of
-realistic filenames including deliberate near-miss cases (`report.pdfx`,
-`my.pdf.backup.txt`) that should NOT match. **NOT yet verified in an
-actual browser** — the DOM structure this relies on was read directly from
-Joomla's own compiled source (see below), not guessed, but only a live
-page can confirm the MutationObserver actually finds and patches real
-items as the grid renders/re-renders.
+Verified: PHP syntax valid, the injected JS passes a real syntax check
+(`node --check`), its file-matching regex passes a table of realistic
+filenames including deliberate near-miss cases (`report.pdfx`,
+`my.pdf.backup.txt`) that should NOT match, and — confirmed the same day
+in a real browser — the MutationObserver correctly finds Vue-rendered
+grid items and the PDF icon renders as intended.
 
 ## Why this needed a plugin at all — confirmed, not assumed
 
