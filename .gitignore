@@ -1,0 +1,17 @@
+# --- Local-only working notes (never committed) ---
+# Any *.local.md is a personal/working file kept out of version control.
+*.local.md
+/.notes-local/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# --- Build / release artifacts ---
+/build/
+/dist/
+*.zip
