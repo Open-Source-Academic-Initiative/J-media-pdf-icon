@@ -2,17 +2,15 @@
 
 A **Joomla 5** system plugin that shows a PDF-specific icon for PDF files
 in the Media Manager **grid view**, instead of the generic document icon
-Joomla core shows for every non-image/video/audio file type. Built for
+Joomla core shows for every non-image/video/audio file type.
 
+## Verification
 
-
-## Status
-
-Verified: PHP syntax valid, the injected JS passes a real syntax check
-(`node --check`), its file-matching regex passes a table of realistic
+PHP syntax valid; the injected JS passes a real syntax check
+(`node --check`); its file-matching regex passes a table of realistic
 filenames including deliberate near-miss cases (`report.pdfx`,
-`my.pdf.backup.txt`) that should NOT match, and — confirmed the same day
-in a real browser — the MutationObserver correctly finds Vue-rendered
+`my.pdf.backup.txt`) that should NOT match; and confirmed working in a
+real browser test — the MutationObserver correctly finds Vue-rendered
 grid items and the PDF icon renders as intended.
 
 ## Why this needed a plugin at all — confirmed, not assumed
@@ -64,9 +62,9 @@ the `com_media` admin page (`onBeforeCompileHead`, checked against
    check — so newly uploaded PDFs get the icon too, not just what was on
    screen at page load.
 
-Legacy CMSPlugin format on purpose (same reasoning as the other custom
-plugins in the project): loads via PluginHelper without a namespace map,
-so it works immediately after a CLI `extension:discover:install`.
+Legacy CMSPlugin format on purpose: loads via PluginHelper without a
+namespace map, so it works immediately after a CLI
+`extension:discover:install`.
 
 ## Installation
 

@@ -34,9 +34,9 @@
  * per-element "already checked" flag so it doesn't reprocess unchanged
  * items on every mutation.
  *
- * Legacy CMSPlugin format on purpose (same reasoning as the other custom
- * plugins in the project): loads via PluginHelper without a namespace
- * map, so it works immediately after a CLI `extension:discover:install`.
+ * Legacy CMSPlugin format on purpose: loads via PluginHelper without a
+ * namespace map, so it works immediately after a CLI
+ * `extension:discover:install`.
  */
 defined('_JEXEC') or die;
 
